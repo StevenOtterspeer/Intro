@@ -1,0 +1,27 @@
+.AboutMe {
+    text-align: left;
+    margin-left: 2%;
+    margin-top: 10%;
+    z-index: 1;
+    position: absolute;
+}
+#text1 {
+    background-color:  rgb(187, 187, 187);
+    padding: 25px 10px;
+    width: 50%;
+    z-index: 1;
+}
+#text2 {
+    background-color:  rgb(177, 177, 177);
+    padding: 15px 10px;
+    width: 50%;
+    z-index: 1;
+}
+#buttonContact {
+    background-color: #126592;
+    padding: 2px 4px;
+    border-radius: 14%;
+    text-decoration: none;
+    color: whitesmoke;
+    z-index: 1;
+}
