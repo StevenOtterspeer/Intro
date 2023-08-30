@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/style.css">
-    <title>Home</title>
+    <link rel="stylesheet" href="/CSS/contact.css">
+    <title>Contact</title>
 </head>
 <body>
 
@@ -17,6 +18,37 @@
         <li><a class="active">Contact</a></li>
     </ul>
 </nav>
+
+<div class="header-content">
+
+    <div class="container grid-2">
+        <div class="column-1">
+            <h1 class="header-title">Contact</h1>
+            <p class="text">
+                hier kunt u mij contacteren.
+            </p>
+        </div>
+
+        <div class="column-2">
+            <form action="process_form.php" method="post">
+                <label for="name">Naam:</label><br>
+                <input type="text" name="name" id="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email" required><br><br>
+
+                <label for="telefoonnummer">Telefoonnummer: (optioneel)</label>
+                <input type="number" name="telefoonnummer" id="telefoonnummer" maxlength="10"><br><br>
+
+                <label for="message">bericht:</label><br>
+                <textarea name="message" id="message" rows="auto" required></textarea><br>
+
+                <input class="submitBtn" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</div>
+
 <div class="hero">
 
 <div class="cube"></div>
@@ -25,8 +57,7 @@
 <div class="cube"></div>
 <div class="cube"></div>
 <div class="cube"></div>
-</div> 
-
+</div>
 
 </body>
 </html>
