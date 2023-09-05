@@ -89,4 +89,8 @@ input[type=email], select {
     background-color: rgb(140, 205, 226);
 }
 
+p {
+    text-align: center;
+}
+
 
