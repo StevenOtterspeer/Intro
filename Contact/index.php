@@ -19,6 +19,30 @@
     </ul>
 </nav>
 
+<?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $naam = $_POST["naam"];
+        $email = $_POST["email"];
+        $telefoon = $_POST["telefoon"];
+        $bedrijf = $_POST["bedrijf"];
+        $bericht = $_POST["bericht"];
+       
+        $to = "sotter06@gmail.com"; 
+        $subject = "Nieuw formulier ingediend";
+        $body = "Naam: $naam\n";
+        $body .= "E-mail: $email\n";
+        $body .= "Telefoonnummer: $telefoon\n";
+        $body .= "Bedrijfsnaam: $bedrijf\n";
+        $body .= "Bericht:\n$bericht";
+       
+        // Stuur de e-mail
+        mail($to, $subject, $body);
+       
+        // Toon een bericht
+        echo "<p>Bedankt! Je formulier is succesvol ingediend.</p>";
+    }
+    ?>
+
 <div class="header-content">
 
     <div class="container grid-2">
@@ -30,21 +54,21 @@
         </div>
 
         <div class="column-2">
-            <form action="process_form.php" method="post">
+            <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
                 <label for="name">Naam:</label><br>
-                <input type="text" name="name" id="name" required><br><br>
+                <input type="text" name="naam" id="naam" required><br><br>
 
                 <label for="email">Email:</label><br>
                 <input type="email" name="email" id="email" required><br><br>
 
                 <label for="telefoonnummer">Telefoonnummer: (optioneel)</label>
-                <input type="number" name="telefoonnummer" id="telefoonnummer" maxlength="10"><br><br>
+                <input type="number" name="telefoon" id="telefoon" maxlength="10"><br><br>
 
                 <label for="bedrijf">Bedrijfsnaam: (optioneel)</label>
-                <input type="text" name="bedrijfsnaam" id="bedrijfsnaam"><br><br>
+                <input type="text" name="bedrijf" id="bedrijf"><br><br>
 
                 <label for="message">bericht:</label><br>
-                <textarea name="message" id="message" rows="auto" required></textarea><br>
+                <textarea name="bericht" id="bericht" rows="auto" required></textarea><br>
 
                 <input class="submitBtn" type="submit" value="Submit">
             </form>
