@@ -18,6 +18,7 @@
         <li><a href="/Contact/index.php">Contact</a></li>
     </ul>
 </nav>
+<main>
 <?php
 
 class MyDB extends SQLite3
@@ -38,14 +39,16 @@ EOF;
 $db = new MyDB();
 
 $ret = $db->query($sql);
+?>
+<div class="projects">
 
+<?php
 while ($row = $ret->fetchArray(SQLITE3_ASSOC)) {
 
 ?>
 
-<div class="myC">
   <?php
-    echo "<project onclick=\"window.open('{$row['url']}', '_blank')\">";
+    echo "<div class='project' onclick=\"window.open('{$row['url']}', '_blank')\">";
 
     // echo "<img src='media/{$row['image']}'>";
 
@@ -59,13 +62,15 @@ while ($row = $ret->fetchArray(SQLITE3_ASSOC)) {
 
 <h1 class='title'><?=$row['title']?></h1>
 
-<div class='desc'><?=$row['desc']?></div>
-</project>
+<p class='desc'><?=$row['desc']?></p>
 </div>
+
     <?php
 }
 $db->close();
 ?>
+</div>
+</main>
 
 <div class="hero">
 
