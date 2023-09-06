@@ -13,7 +13,7 @@
 <nav>
     <ul>
         <li><a href="/index.html" >Home</a></li>
-        <li><a href="/Projectpagina/index.html">Projectpagina</a></li>
+        <li><a href="/Projectpagina/index.php">Projectpagina</a></li>
         <li><a href="/About/index.html">About</a></li>
         <li><a class="active">Contact</a></li>
     </ul>
