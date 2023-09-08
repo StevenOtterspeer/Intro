@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/style.css">
-    <link rel="stylesheet" href="/CSS/project.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/project.css">
     <title>Projectpagina</title>
 </head>
 <body>
 
 <nav>
     <ul>
-        <li><a href="/index.html" >Home</a></li>
+        <li><a href="../index.html" >Home</a></li>
         <li><a class="active">Projectpagina</a></li>
-        <li><a href="/About/index.html">About</a></li>
-        <li><a href="/Contact/index.php">Contact</a></li>
+        <li><a href="../About/index.html">About</a></li>
+        <li><a href="../Contact/index.php">Contact</a></li>
     </ul>
 </nav>
 <main>
