@@ -9,16 +9,12 @@
     cursor: pointer;
 }
 img {
-    width: 250px;
+    width: 311px;
 }
 .project {
-    width: 30vw;
-    display: flex; 
-    flex-direction: row;
-    flex-wrap: wrap;
+    width: 27vw;
     margin: 10px; 
     padding: 20px; 
     border: 1px solid #ccc; 
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
 }
