@@ -58,7 +58,7 @@ while ($row = $ret->fetchArray(SQLITE3_ASSOC)) {
 
     // echo "</project>";
     ?>
-<img src='/files/<?= $row['image'] ?>'>
+<img src='../files/<?= $row['image'] ?>'>
 
 <h1 class='title'><?=$row['title']?></h1>
 
