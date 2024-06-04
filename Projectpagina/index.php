@@ -72,15 +72,5 @@ $db->close();
 </div>
 </main>
 
-<div class="hero">
-
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    </div> 
-
 </body>
 </html>

@@ -6,19 +6,20 @@
     position: absolute;
 }
 #text1 {
-    background-color:  rgb(187, 187, 187);
     padding: 25px 10px;
     width: 50%;
     z-index: 1;
+    border-radius: 1.5rem;
+    background-color: rgb(204, 204, 204);
 }
 #text2 {
-    background-color:  rgb(177, 177, 177);
+    font-weight: bold;
     padding: 20px 10px;
     width: 50%;
     z-index: 1;
 }
 #buttonContact {
-    background-color: #126592;
+    background-color: rgb(146, 146, 223);
     padding: 0.9rem 2.1rem;
     border-radius: 2rem;
     text-decoration: none;
@@ -26,7 +27,7 @@
     z-index: 1;
 }
 #buttonCV {
-    background-color: #126592;
+    background-color: rgb(146, 146, 223);
     padding: 0.9rem 2.1rem;
     border-radius: 2rem;
     text-decoration: none;
@@ -34,8 +35,8 @@
     z-index: 1;
 }
 #buttonContact:hover {
-    background-color: #005c8e;
+    background-color: rgb(121, 121, 223);
 }
 #buttonCV:hover {
-    background-color: #005c8e;
+    background-color: rgb(121, 121, 223);
 }

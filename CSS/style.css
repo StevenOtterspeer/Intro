@@ -1,12 +1,13 @@
 body {
-    background-color: white;
-    color: black;
+    background-color: rgba(209, 208, 208, 0.875);
+    color: rgb(62, 59, 59);
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 nav {
-    background-color: #126592;
+    background-color: rgb(146, 146, 223);
     text-align: center;
+    font-size: 1.3rem;
     margin: 0;
     z-index: -1;
 }
@@ -22,117 +23,13 @@ nav a {
     color: whitesmoke;
 }
 nav a:hover {
-    background-color: gray;
-    padding: 5px 5px;
+    background-color: rgb(121, 121, 223);
+    padding: 0.9rem 2.1rem;
 }
 .active {
-    background-color: rgba(255, 0, 0, 0.579);
-    border-radius: 2rem;
-    border: white;
-    font-size: 1rem;
+    background-color: rgb(121, 121, 223);
+    margin: 0;
+    border-radius: 0.1rem;
+    font-size: 1.3rem;
     padding: 0.9rem 2.1rem;
-}
-h1 {
-    text-align: center;
-    z-index: 1;
-}
-#Image {
-    border-radius: 15%;
-    z-index: 1;
-}
-.intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10%;
-    z-index: 1;
-}
-#buttonInfo {
-    background-color: #126592;
-    padding: 0.9rem 2.1rem;
-    border-radius: 2rem;
-    text-decoration: none;
-    color: whitesmoke;
-    z-index: 1;
-}
-
-
-/* Background */
-
-@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
-.hero {
-  background-color: white;
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-  font-family: "Montserrat", sans-serif;
-}
-
-.cube {
-  position: absolute;
-  top: 80vh;
-  left: 45vw;
-  width: 10px;
-  height: 10px;
-  border: solid 1px #003298;
-  transform-origin: top left;
-  transform: scale(0) rotate(0deg) translate(-50%, -50%);
-  -webkit-animation: cube 12s ease-in forwards infinite;
-          animation: cube 12s ease-in forwards infinite;
-}
-.cube:nth-child(2n) {
-  border-color: #0051f4;
-}
-.cube:nth-child(2) {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-  left: 25vw;
-  top: 40vh;
-}
-.cube:nth-child(3) {
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
-  left: 75vw;
-  top: 50vh;
-}
-.cube:nth-child(4) {
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
-  left: 90vw;
-  top: 10vh;
-}
-.cube:nth-child(5) {
-  -webkit-animation-delay: 8s;
-          animation-delay: 8s;
-  left: 10vw;
-  top: 85vh;
-}
-.cube:nth-child(6) {
-  -webkit-animation-delay: 10s;
-          animation-delay: 10s;
-  left: 50vw;
-  top: 10vh;
-}
-
-@-webkit-keyframes cube {
-  from {
-    transform: scale(0) rotate(0deg) translate(-50%, -50%);
-    opacity: 1;
-  }
-  to {
-    transform: scale(20) rotate(960deg) translate(-50%, -50%);
-    opacity: 0;
-  }
-}
-
-@keyframes cube {
-  from {
-    transform: scale(0) rotate(0deg) translate(-50%, -50%);
-    opacity: 1;
-  }
-  to {
-    transform: scale(20) rotate(960deg) translate(-50%, -50%);
-    opacity: 0;
-  }
 }

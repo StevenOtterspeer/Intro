@@ -76,15 +76,5 @@
     </div>
 </div>
 
-<div class="hero">
-
-<div class="cube"></div>
-<div class="cube"></div>
-<div class="cube"></div>
-<div class="cube"></div>
-<div class="cube"></div>
-<div class="cube"></div>
-</div>
-
 </body>
 </html>

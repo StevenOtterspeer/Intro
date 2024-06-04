@@ -1,0 +1,27 @@
+h1 {
+    text-align: left;
+    float: left;
+    z-index: 1;
+}
+#Image {
+    border-radius: 15%;
+    vertical-align: middle;
+    z-index: 1;
+}
+.intro {
+    display: flex;
+    margin-top: 10%;
+    flex-direction: column;
+    z-index: 1;
+    padding: 27px;
+}
+#buttonInfo {
+    background-color: rgb(146, 146, 223);
+    text-align: center;
+    padding: 0.9rem 2.1rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    color: whitesmoke;
+    z-index: 1;
+    width: 200px;
+}
