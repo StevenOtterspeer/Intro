@@ -19,6 +19,7 @@
     </ul>
 </nav>
 <main>
+    <h1>Leerjaar 1:</h1>
 <?php
 
 class MyDB extends SQLite3
